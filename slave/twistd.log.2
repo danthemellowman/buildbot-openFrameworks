@@ -1,0 +1,448 @@
+2014-09-07 11:06:13-0400 [-] Log opened.
+2014-09-07 11:06:13-0400 [-] twistd 12.2.0 (/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python 2.7.6) starting up.
+2014-09-07 11:06:13-0400 [-] reactor class: twisted.internet.selectreactor.SelectReactor.
+2014-09-07 11:06:13-0400 [-] Starting BuildSlave -- version: 0.8.8
+2014-09-07 11:06:13-0400 [-] recording hostname in twistd.hostname
+2014-09-07 11:06:13-0400 [-] Starting factory <buildslave.bot.BotFactory instance at 0x105c839e0>
+2014-09-07 11:06:13-0400 [-] Connecting to localhost:9989
+2014-09-07 11:06:13-0400 [Broker,client] message from master: attached
+2014-09-07 11:06:13-0400 [Broker,client] SlaveBuilder.remote_print(runtests): message from master: attached
+2014-09-07 11:06:13-0400 [Broker,client] Connected to localhost:9989; slave is ready
+2014-09-07 11:06:13-0400 [Broker,client] sending application-level keepalives every 600 seconds
+2014-09-07 11:06:13-0400 [Broker,client] SlaveBuilder.remote_print(runtests): message from master: ping
+2014-09-07 11:06:13-0400 [Broker,client]  startCommand:shell [id 0]
+2014-09-07 11:06:13-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:06:13-0400 [Broker,client]  git --version
+2014-09-07 11:06:13-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:06:13-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:06:13-0400 [Broker,client]   argv: ['git', '--version']
+2014-09-07 11:06:13-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:06:13-0400 [Broker,client]   using PTY: False
+2014-09-07 11:06:13-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.010557
+2014-09-07 11:06:13-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c8bcb0>
+2014-09-07 11:06:13-0400 [Broker,client]  startCommand:stat [id 1]
+2014-09-07 11:06:13-0400 [Broker,client] SlaveBuilder.commandComplete <buildslave.commands.fs.StatFile instance at 0x105c99368>
+2014-09-07 11:06:13-0400 [Broker,client]  startCommand:shell [id 2]
+2014-09-07 11:06:13-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:06:13-0400 [Broker,client]  git clone --branch master git://github.com/openFrameworks/openFrameworks.git .
+2014-09-07 11:06:13-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:06:13-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:06:13-0400 [Broker,client]   argv: ['git', 'clone', '--branch', 'master', 'git://github.com/openFrameworks/openFrameworks.git', '.']
+2014-09-07 11:06:13-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:06:13-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:16-0400 [-] command finished with signal None, exit code 0, elapsedTime: 423.104887
+2014-09-07 11:13:16-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c8bcb0>
+2014-09-07 11:13:16-0400 [Broker,client]  startCommand:shell [id 3]
+2014-09-07 11:13:16-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:13:16-0400 [Broker,client]  git reset --hard 7b175e7d3492d29e82161a42d9f171a13f045dc7 --
+2014-09-07 11:13:16-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:13:16-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:13:16-0400 [Broker,client]   argv: ['git', 'reset', '--hard', '7b175e7d3492d29e82161a42d9f171a13f045dc7', '--']
+2014-09-07 11:13:16-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:13:16-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:17-0400 [-] command finished with signal None, exit code 0, elapsedTime: 1.062305
+2014-09-07 11:13:17-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c8bcb0>
+2014-09-07 11:13:17-0400 [Broker,client]  startCommand:shell [id 4]
+2014-09-07 11:13:17-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:13:17-0400 [Broker,client]  git rev-parse HEAD
+2014-09-07 11:13:17-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:13:17-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:13:17-0400 [Broker,client]   argv: ['git', 'rev-parse', 'HEAD']
+2014-09-07 11:13:17-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:13:17-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:17-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.007205
+2014-09-07 11:13:17-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c8bcb0>
+2014-09-07 11:13:36-0400 [Broker,client] SlaveBuilder.remote_print(runtests): message from master: ping
+2014-09-07 11:13:37-0400 [Broker,client]  startCommand:shell [id 5]
+2014-09-07 11:13:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:13:37-0400 [Broker,client]  git --version
+2014-09-07 11:13:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:13:37-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:13:37-0400 [Broker,client]   argv: ['git', '--version']
+2014-09-07 11:13:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:13:37-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:37-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.006716
+2014-09-07 11:13:37-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c8bcb0>
+2014-09-07 11:13:37-0400 [Broker,client]  startCommand:stat [id 6]
+2014-09-07 11:13:37-0400 [Broker,client] SlaveBuilder.commandComplete <buildslave.commands.fs.StatFile instance at 0x105c83c68>
+2014-09-07 11:13:37-0400 [Broker,client]  startCommand:shell [id 7]
+2014-09-07 11:13:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:13:37-0400 [Broker,client]  git cat-file -e d053c9e00f6ca39662dc68bbf80228c44cd31a15
+2014-09-07 11:13:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:13:37-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:13:37-0400 [Broker,client]   argv: ['git', 'cat-file', '-e', 'd053c9e00f6ca39662dc68bbf80228c44cd31a15']
+2014-09-07 11:13:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:13:37-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:37-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.006770
+2014-09-07 11:13:37-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-07 11:13:37-0400 [Broker,client]  startCommand:shell [id 8]
+2014-09-07 11:13:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:13:37-0400 [Broker,client]  git reset --hard d053c9e00f6ca39662dc68bbf80228c44cd31a15 --
+2014-09-07 11:13:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:13:37-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:13:37-0400 [Broker,client]   argv: ['git', 'reset', '--hard', 'd053c9e00f6ca39662dc68bbf80228c44cd31a15', '--']
+2014-09-07 11:13:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:13:37-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:37-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.453321
+2014-09-07 11:13:37-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-07 11:13:37-0400 [Broker,client]  startCommand:shell [id 9]
+2014-09-07 11:13:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:13:37-0400 [Broker,client]  git branch -M master
+2014-09-07 11:13:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:13:37-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:13:37-0400 [Broker,client]   argv: ['git', 'branch', '-M', 'master']
+2014-09-07 11:13:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:13:37-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:37-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.082012
+2014-09-07 11:13:37-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-07 11:13:37-0400 [Broker,client]  startCommand:shell [id 10]
+2014-09-07 11:13:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-07 11:13:37-0400 [Broker,client]  git rev-parse HEAD
+2014-09-07 11:13:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-07 11:13:37-0400 [Broker,client]   watching logfiles {}
+2014-09-07 11:13:37-0400 [Broker,client]   argv: ['git', 'rev-parse', 'HEAD']
+2014-09-07 11:13:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-07 11:13:37-0400 [Broker,client]   using PTY: False
+2014-09-07 11:13:37-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.006968
+2014-09-07 11:13:38-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-07 11:16:13-0400 [-] sending app-level keepalive
+2014-09-07 11:26:13-0400 [-] sending app-level keepalive
+2014-09-07 11:36:13-0400 [-] sending app-level keepalive
+2014-09-07 11:46:13-0400 [-] sending app-level keepalive
+2014-09-07 11:56:13-0400 [-] sending app-level keepalive
+2014-09-07 12:06:13-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 12:06:13-0400 [-] sending app-level keepalive
+2014-09-07 12:16:13-0400 [-] sending app-level keepalive
+2014-09-07 12:26:13-0400 [-] sending app-level keepalive
+2014-09-07 12:36:13-0400 [-] sending app-level keepalive
+2014-09-07 12:46:13-0400 [-] sending app-level keepalive
+2014-09-07 12:56:13-0400 [-] sending app-level keepalive
+2014-09-07 13:06:13-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 13:06:13-0400 [-] sending app-level keepalive
+2014-09-07 13:16:13-0400 [-] sending app-level keepalive
+2014-09-07 13:26:13-0400 [-] sending app-level keepalive
+2014-09-07 13:36:13-0400 [-] sending app-level keepalive
+2014-09-07 13:46:13-0400 [-] sending app-level keepalive
+2014-09-07 13:56:13-0400 [-] sending app-level keepalive
+2014-09-07 14:06:13-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 14:06:13-0400 [-] sending app-level keepalive
+2014-09-07 14:16:13-0400 [-] sending app-level keepalive
+2014-09-07 14:26:13-0400 [-] sending app-level keepalive
+2014-09-07 14:36:13-0400 [-] sending app-level keepalive
+2014-09-07 14:46:13-0400 [-] sending app-level keepalive
+2014-09-07 14:56:13-0400 [-] sending app-level keepalive
+2014-09-07 15:06:13-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 15:06:13-0400 [-] sending app-level keepalive
+2014-09-07 15:16:13-0400 [-] sending app-level keepalive
+2014-09-07 15:26:13-0400 [-] sending app-level keepalive
+2014-09-07 15:36:13-0400 [-] sending app-level keepalive
+2014-09-07 15:46:13-0400 [-] sending app-level keepalive
+2014-09-07 15:56:13-0400 [-] sending app-level keepalive
+2014-09-07 16:06:13-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 16:06:13-0400 [-] sending app-level keepalive
+2014-09-07 16:16:13-0400 [-] sending app-level keepalive
+2014-09-07 16:26:13-0400 [-] sending app-level keepalive
+2014-09-07 16:36:13-0400 [-] sending app-level keepalive
+2014-09-07 16:46:13-0400 [-] sending app-level keepalive
+2014-09-07 16:56:13-0400 [-] sending app-level keepalive
+2014-09-07 17:06:13-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 17:06:13-0400 [-] sending app-level keepalive
+2014-09-07 18:43:02-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 18:43:02-0400 [-] sending app-level keepalive
+2014-09-07 18:53:02-0400 [-] sending app-level keepalive
+2014-09-07 19:03:02-0400 [-] sending app-level keepalive
+2014-09-07 19:13:02-0400 [-] sending app-level keepalive
+2014-09-07 19:23:02-0400 [-] sending app-level keepalive
+2014-09-07 19:39:53-0400 [-] sending app-level keepalive
+2014-09-07 19:43:02-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 19:49:53-0400 [-] sending app-level keepalive
+2014-09-07 19:59:53-0400 [-] sending app-level keepalive
+2014-09-07 20:09:53-0400 [-] sending app-level keepalive
+2014-09-07 20:19:53-0400 [-] sending app-level keepalive
+2014-09-07 20:29:53-0400 [-] sending app-level keepalive
+2014-09-07 20:39:53-0400 [-] sending app-level keepalive
+2014-09-07 20:43:02-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 20:49:53-0400 [-] sending app-level keepalive
+2014-09-07 20:59:53-0400 [-] sending app-level keepalive
+2014-09-07 21:09:53-0400 [-] sending app-level keepalive
+2014-09-07 21:19:53-0400 [-] sending app-level keepalive
+2014-09-07 21:29:53-0400 [-] sending app-level keepalive
+2014-09-07 21:39:53-0400 [-] sending app-level keepalive
+2014-09-07 21:43:02-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 21:49:53-0400 [-] sending app-level keepalive
+2014-09-07 21:59:53-0400 [-] sending app-level keepalive
+2014-09-07 22:10:11-0400 [-] sending app-level keepalive
+2014-09-07 22:20:11-0400 [-] sending app-level keepalive
+2014-09-07 22:30:11-0400 [-] sending app-level keepalive
+2014-09-07 22:40:11-0400 [-] sending app-level keepalive
+2014-09-07 22:43:02-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 22:50:11-0400 [-] sending app-level keepalive
+2014-09-07 23:00:11-0400 [-] sending app-level keepalive
+2014-09-07 23:10:11-0400 [-] sending app-level keepalive
+2014-09-07 23:20:11-0400 [-] sending app-level keepalive
+2014-09-07 23:30:11-0400 [-] sending app-level keepalive
+2014-09-07 23:40:11-0400 [-] sending app-level keepalive
+2014-09-07 23:43:02-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-07 23:50:11-0400 [-] sending app-level keepalive
+2014-09-08 00:58:39-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 00:58:39-0400 [-] sending app-level keepalive
+2014-09-08 01:59:01-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 01:59:01-0400 [-] sending app-level keepalive
+2014-09-08 01:59:07-0400 [Broker,client] SlaveBuilder.remote_print(runtests): message from master: ping
+2014-09-08 01:59:07-0400 [Broker,client]  startCommand:shell [id 11]
+2014-09-08 01:59:07-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:07-0400 [Broker,client]  git --version
+2014-09-08 01:59:07-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:07-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:07-0400 [Broker,client]   argv: ['git', '--version']
+2014-09-08 01:59:07-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:07-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:07-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.006779
+2014-09-08 01:59:07-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c8bc20>
+2014-09-08 01:59:07-0400 [Broker,client]  startCommand:stat [id 12]
+2014-09-08 01:59:07-0400 [Broker,client] SlaveBuilder.commandComplete <buildslave.commands.fs.StatFile instance at 0x105c83c68>
+2014-09-08 01:59:07-0400 [Broker,client]  startCommand:shell [id 13]
+2014-09-08 01:59:07-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:07-0400 [Broker,client]  git cat-file -e c283e12ee079a343976fdfebcfb54cb67e87c70b
+2014-09-08 01:59:07-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:07-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:07-0400 [Broker,client]   argv: ['git', 'cat-file', '-e', 'c283e12ee079a343976fdfebcfb54cb67e87c70b']
+2014-09-08 01:59:07-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:07-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:07-0400 [-] command finished with signal None, exit code 1, elapsedTime: 0.010900
+2014-09-08 01:59:07-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-08 01:59:07-0400 [Broker,client]  startCommand:shell [id 14]
+2014-09-08 01:59:07-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:07-0400 [Broker,client]  git fetch -t git://github.com/openFrameworks/openFrameworks.git master
+2014-09-08 01:59:07-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:07-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:07-0400 [Broker,client]   argv: ['git', 'fetch', '-t', 'git://github.com/openFrameworks/openFrameworks.git', 'master']
+2014-09-08 01:59:07-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:07-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:09-0400 [-] command finished with signal None, exit code 0, elapsedTime: 1.670808
+2014-09-08 01:59:09-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-08 01:59:09-0400 [Broker,client]  startCommand:shell [id 15]
+2014-09-08 01:59:09-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:09-0400 [Broker,client]  git reset --hard c283e12ee079a343976fdfebcfb54cb67e87c70b --
+2014-09-08 01:59:09-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:09-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:09-0400 [Broker,client]   argv: ['git', 'reset', '--hard', 'c283e12ee079a343976fdfebcfb54cb67e87c70b', '--']
+2014-09-08 01:59:09-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:09-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:12-0400 [-] command finished with signal None, exit code 0, elapsedTime: 2.597404
+2014-09-08 01:59:12-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:shell [id 16]
+2014-09-08 01:59:12-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:12-0400 [Broker,client]  git branch -M master
+2014-09-08 01:59:12-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:12-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:12-0400 [Broker,client]   argv: ['git', 'branch', '-M', 'master']
+2014-09-08 01:59:12-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:12-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:12-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.030144
+2014-09-08 01:59:12-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:shell [id 17]
+2014-09-08 01:59:12-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:12-0400 [Broker,client]  git rev-parse HEAD
+2014-09-08 01:59:12-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:12-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:12-0400 [Broker,client]   argv: ['git', 'rev-parse', 'HEAD']
+2014-09-08 01:59:12-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:12-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:12-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.032027
+2014-09-08 01:59:12-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-08 01:59:12-0400 [Broker,client] SlaveBuilder.remote_print(runtests): message from master: ping
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:shell [id 18]
+2014-09-08 01:59:12-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:12-0400 [Broker,client]  git --version
+2014-09-08 01:59:12-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:12-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:12-0400 [Broker,client]   argv: ['git', '--version']
+2014-09-08 01:59:12-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:12-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:12-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.027211
+2014-09-08 01:59:12-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c83c68>
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:stat [id 19]
+2014-09-08 01:59:12-0400 [Broker,client] SlaveBuilder.commandComplete <buildslave.commands.fs.StatFile instance at 0x105c9df38>
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:shell [id 20]
+2014-09-08 01:59:12-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:12-0400 [Broker,client]  git cat-file -e 7fb9d4670056865c1ebcb283fc9c57429afc1357
+2014-09-08 01:59:12-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:12-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:12-0400 [Broker,client]   argv: ['git', 'cat-file', '-e', '7fb9d4670056865c1ebcb283fc9c57429afc1357']
+2014-09-08 01:59:12-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:12-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:12-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.032005
+2014-09-08 01:59:12-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9df38>
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:shell [id 21]
+2014-09-08 01:59:12-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:12-0400 [Broker,client]  git reset --hard 7fb9d4670056865c1ebcb283fc9c57429afc1357 --
+2014-09-08 01:59:12-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:12-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:12-0400 [Broker,client]   argv: ['git', 'reset', '--hard', '7fb9d4670056865c1ebcb283fc9c57429afc1357', '--']
+2014-09-08 01:59:12-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:12-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:12-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.198447
+2014-09-08 01:59:12-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9df38>
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:shell [id 22]
+2014-09-08 01:59:12-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:12-0400 [Broker,client]  git branch -M master
+2014-09-08 01:59:12-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:12-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:12-0400 [Broker,client]   argv: ['git', 'branch', '-M', 'master']
+2014-09-08 01:59:12-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:12-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:12-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.046052
+2014-09-08 01:59:12-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9df38>
+2014-09-08 01:59:12-0400 [Broker,client]  startCommand:shell [id 23]
+2014-09-08 01:59:12-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 01:59:13-0400 [Broker,client]  git rev-parse HEAD
+2014-09-08 01:59:13-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 01:59:13-0400 [Broker,client]   watching logfiles {}
+2014-09-08 01:59:13-0400 [Broker,client]   argv: ['git', 'rev-parse', 'HEAD']
+2014-09-08 01:59:13-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 01:59:13-0400 [Broker,client]   using PTY: False
+2014-09-08 01:59:13-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.033054
+2014-09-08 01:59:13-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9df38>
+2014-09-08 02:59:01-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 02:59:01-0400 [-] sending app-level keepalive
+2014-09-08 03:59:01-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 03:59:01-0400 [-] sending app-level keepalive
+2014-09-08 04:59:01-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 04:59:01-0400 [-] sending app-level keepalive
+2014-09-08 05:59:01-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 05:59:01-0400 [-] sending app-level keepalive
+2014-09-08 06:59:01-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 06:59:01-0400 [-] sending app-level keepalive
+2014-09-08 07:57:46-0400 [-] sending app-level keepalive
+2014-09-08 07:59:01-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 08:07:46-0400 [-] sending app-level keepalive
+2014-09-08 11:19:25-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 11:19:25-0400 [-] sending app-level keepalive
+2014-09-08 19:16:26-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 19:16:26-0400 [-] sending app-level keepalive
+2014-09-08 19:20:37-0400 [Broker,client] SlaveBuilder.remote_print(runtests): message from master: ping
+2014-09-08 19:20:37-0400 [Broker,client]  startCommand:shell [id 24]
+2014-09-08 19:20:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:37-0400 [Broker,client]  git --version
+2014-09-08 19:20:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:37-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:37-0400 [Broker,client]   argv: ['git', '--version']
+2014-09-08 19:20:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:37-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:37-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.008321
+2014-09-08 19:20:37-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c993f8>
+2014-09-08 19:20:37-0400 [Broker,client]  startCommand:stat [id 25]
+2014-09-08 19:20:37-0400 [Broker,client] SlaveBuilder.commandComplete <buildslave.commands.fs.StatFile instance at 0x105c993f8>
+2014-09-08 19:20:37-0400 [Broker,client]  startCommand:shell [id 26]
+2014-09-08 19:20:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:37-0400 [Broker,client]  git cat-file -e 4295b4ba2b662015ea5dce090efc9c275aa2ef4d
+2014-09-08 19:20:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:37-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:37-0400 [Broker,client]   argv: ['git', 'cat-file', '-e', '4295b4ba2b662015ea5dce090efc9c275aa2ef4d']
+2014-09-08 19:20:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:37-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:37-0400 [-] command finished with signal None, exit code 1, elapsedTime: 0.008401
+2014-09-08 19:20:37-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c993f8>
+2014-09-08 19:20:37-0400 [Broker,client]  startCommand:shell [id 27]
+2014-09-08 19:20:37-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:37-0400 [Broker,client]  git fetch -t git://github.com/openFrameworks/openFrameworks.git master
+2014-09-08 19:20:37-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:37-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:37-0400 [Broker,client]   argv: ['git', 'fetch', '-t', 'git://github.com/openFrameworks/openFrameworks.git', 'master']
+2014-09-08 19:20:37-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:37-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:39-0400 [-] command finished with signal None, exit code 0, elapsedTime: 1.382672
+2014-09-08 19:20:39-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c993f8>
+2014-09-08 19:20:39-0400 [Broker,client]  startCommand:shell [id 28]
+2014-09-08 19:20:39-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:39-0400 [Broker,client]  git reset --hard 4295b4ba2b662015ea5dce090efc9c275aa2ef4d --
+2014-09-08 19:20:39-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:39-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:39-0400 [Broker,client]   argv: ['git', 'reset', '--hard', '4295b4ba2b662015ea5dce090efc9c275aa2ef4d', '--']
+2014-09-08 19:20:39-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:39-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:43-0400 [-] command finished with signal None, exit code 0, elapsedTime: 4.679925
+2014-09-08 19:20:43-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c993f8>
+2014-09-08 19:20:43-0400 [Broker,client]  startCommand:shell [id 29]
+2014-09-08 19:20:43-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:43-0400 [Broker,client]  git branch -M master
+2014-09-08 19:20:43-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:43-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:43-0400 [Broker,client]   argv: ['git', 'branch', '-M', 'master']
+2014-09-08 19:20:43-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:43-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:43-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.012793
+2014-09-08 19:20:43-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c993f8>
+2014-09-08 19:20:43-0400 [Broker,client]  startCommand:shell [id 30]
+2014-09-08 19:20:43-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:43-0400 [Broker,client]  git rev-parse HEAD
+2014-09-08 19:20:43-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:43-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:43-0400 [Broker,client]   argv: ['git', 'rev-parse', 'HEAD']
+2014-09-08 19:20:43-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:43-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:43-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.007096
+2014-09-08 19:20:43-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c993f8>
+2014-09-08 19:20:44-0400 [Broker,client] SlaveBuilder.remote_print(runtests): message from master: ping
+2014-09-08 19:20:45-0400 [Broker,client]  startCommand:shell [id 31]
+2014-09-08 19:20:45-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:45-0400 [Broker,client]  git --version
+2014-09-08 19:20:45-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:45-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:45-0400 [Broker,client]   argv: ['git', '--version']
+2014-09-08 19:20:45-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:45-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:45-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.006657
+2014-09-08 19:20:45-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c993f8>
+2014-09-08 19:20:45-0400 [Broker,client]  startCommand:stat [id 32]
+2014-09-08 19:20:45-0400 [Broker,client] SlaveBuilder.commandComplete <buildslave.commands.fs.StatFile instance at 0x105c9db48>
+2014-09-08 19:20:45-0400 [Broker,client]  startCommand:shell [id 33]
+2014-09-08 19:20:45-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:45-0400 [Broker,client]  git cat-file -e f400473064ef94022d9d01cc06da7ea366c1d32f
+2014-09-08 19:20:45-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:45-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:45-0400 [Broker,client]   argv: ['git', 'cat-file', '-e', 'f400473064ef94022d9d01cc06da7ea366c1d32f']
+2014-09-08 19:20:45-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:45-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:45-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.006778
+2014-09-08 19:20:45-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9db48>
+2014-09-08 19:20:45-0400 [Broker,client]  startCommand:shell [id 34]
+2014-09-08 19:20:45-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:45-0400 [Broker,client]  git reset --hard f400473064ef94022d9d01cc06da7ea366c1d32f --
+2014-09-08 19:20:45-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:45-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:45-0400 [Broker,client]   argv: ['git', 'reset', '--hard', 'f400473064ef94022d9d01cc06da7ea366c1d32f', '--']
+2014-09-08 19:20:45-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:45-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:48-0400 [-] command finished with signal None, exit code 0, elapsedTime: 3.030893
+2014-09-08 19:20:48-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9db48>
+2014-09-08 19:20:48-0400 [Broker,client]  startCommand:shell [id 35]
+2014-09-08 19:20:48-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:48-0400 [Broker,client]  git branch -M master
+2014-09-08 19:20:48-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:48-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:48-0400 [Broker,client]   argv: ['git', 'branch', '-M', 'master']
+2014-09-08 19:20:48-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:48-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:48-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.011233
+2014-09-08 19:20:48-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9db48>
+2014-09-08 19:20:48-0400 [Broker,client]  startCommand:shell [id 36]
+2014-09-08 19:20:48-0400 [Broker,client] RunProcess._startCommand
+2014-09-08 19:20:48-0400 [Broker,client]  git rev-parse HEAD
+2014-09-08 19:20:48-0400 [Broker,client]   in dir /Users/dantheman/src/buildbot/slave/runtests/build (timeout 1200 secs)
+2014-09-08 19:20:48-0400 [Broker,client]   watching logfiles {}
+2014-09-08 19:20:48-0400 [Broker,client]   argv: ['git', 'rev-parse', 'HEAD']
+2014-09-08 19:20:48-0400 [Broker,client]  environment: {'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-y3otbj/Render', 'TMPDIR': '/var/folders/9t/0hgycj314pj055w95bb4rczw0000gn/T/', 'SHLVL': '1', 'OLDPWD': '/Users/dantheman', 'SSH_AUTH_SOCK': '/tmp/launch-87m4Nh/Listeners', 'TERM_SESSION_ID': 'C24C4B5E-65CE-412C-948B-A63EFE5574A3', 'TERM_PROGRAM_VERSION': '326', '__CF_USER_TEXT_ENCODING': '0x1F5:0:0', 'PWD': '/Users/dantheman/src/buildbot/slave/runtests/build', 'SHELL': '/bin/bash', 'LOGNAME': 'dantheman', 'USER': 'dantheman', 'PATH': '/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin', 'HOME': '/Users/dantheman', '__CHECKFIX1436934': '1', 'DISPLAY': '/tmp/launch-UiU1LT/org.macosforge.xquartz:0', '_': '/usr/local/bin/buildslave', 'TERM_PROGRAM': 'Apple_Terminal'}
+2014-09-08 19:20:48-0400 [Broker,client]   using PTY: False
+2014-09-08 19:20:48-0400 [-] command finished with signal None, exit code 0, elapsedTime: 0.007253
+2014-09-08 19:20:48-0400 [-] SlaveBuilder.commandComplete <buildslave.commands.shell.SlaveShellCommand instance at 0x105c9db48>
+2014-09-08 19:26:26-0400 [-] sending app-level keepalive
+2014-09-08 19:36:26-0400 [-] sending app-level keepalive
+2014-09-08 19:46:26-0400 [-] sending app-level keepalive
+2014-09-08 19:56:26-0400 [-] sending app-level keepalive
+2014-09-08 20:06:26-0400 [-] sending app-level keepalive
+2014-09-08 20:16:26-0400 [Broker,client] message from master: Received keepalive from master
+2014-09-08 20:16:26-0400 [-] sending app-level keepalive
+2014-09-08 20:54:27-0400 [-] sending app-level keepalive
+2014-09-08 21:04:27-0400 [-] sending app-level keepalive
